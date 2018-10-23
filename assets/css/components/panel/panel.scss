@@ -1,0 +1,10 @@
+.panel {
+	max-width: 1200px;
+	margin: auto;
+
+	&:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+}

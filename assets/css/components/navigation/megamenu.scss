@@ -1,0 +1,25 @@
+.megamenu {
+	width: 100%;
+	background-color: #faf;
+
+	.megamenu_item {
+		width: 25%;
+		float: left;
+		display: inline-block;
+		transition: background-color .3s ease;
+		min-height: 250px;
+
+		.megamenu_item_content {
+			padding: 50px;
+
+			.megamenu_label {
+				font-size: 36px;
+			}
+		}
+
+		// actions
+		&:hover {
+			background-color: #ddd;
+		}
+	}
+}

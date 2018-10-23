@@ -1,0 +1,60 @@
+.floaty {
+	margin: 30px;
+
+	.floaty_content {
+		background-color: $white;
+		position: relative;
+		display: inline-block;
+		border-radius: 999px;
+		@include dadly_shadow();
+		z-index: 9;
+		padding: 10px;
+	}
+
+	&.right {
+		position: absolute;
+		right: 0px;
+	}
+
+	&.top {
+		position: absolute;
+		top: 0px;
+	}
+
+	.floaty_menu {
+		position: absolute;
+		width: 80px;
+		text-align: center;
+		left: 50%;
+		transform: translateX(-50%);
+
+		&:before, &:after {
+			content: '';
+			display: block;
+			height: 20px;
+			background-color: $white;
+		}
+
+		&:after {
+			border-bottom-left-radius: 20px;
+			border-bottom-right-radius: 20px;
+		}
+
+		.floaty_menu_item {
+			background-color: $white;
+			padding: 6px 5px;
+			position: relative;
+			left: 0px;
+			transition: left .25s ease;
+
+			svg {
+				height: 36px;
+				width: 36px;
+			}
+
+			&:hover {
+				left: 10px;
+			}
+		}
+	}
+}
